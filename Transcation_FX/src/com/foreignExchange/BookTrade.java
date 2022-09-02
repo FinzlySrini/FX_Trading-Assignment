@@ -1,4 +1,5 @@
 package com.foreignExchange;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class BookTrade {
 	static int count =0; 
@@ -17,7 +18,14 @@ public static void bookTrade() {
 	 //checks the given input String to the below mentioned String value
 	 if(CurrencyPair.equalsIgnoreCase("USDINR")) {   // if we give input as lower,upper or LowerUpper cases...still it will work 
 		 System.out.println("Enter the amount");
-		 amount =input.nextDouble();
+		 try{
+			 amount =input.nextDouble();
+		 }
+		 catch(InputMismatchException e) {
+			 System.out.println("Please enter the valid input!");
+			 bookTrade();
+		 }
+		 //amount =input.nextDouble();
 		System.out.println("Do you want to get Rate(yes/no)");
 		 rate = input.next();		
 			convertedValue = amount * inr;

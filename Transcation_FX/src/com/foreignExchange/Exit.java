@@ -20,7 +20,6 @@ static void exit() {
 		System.out.println("Please enter valid input!");
 		exit();
 		System.out.println("**********************");
-		
 	}
 	
 }
