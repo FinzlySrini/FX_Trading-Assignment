@@ -14,7 +14,7 @@ static void exit() {
 	}
 	else if(conformation.equalsIgnoreCase("n")){
 	System.out.println("**********************");
-	//ForeignExchange.SelectOption();  // (if it is necessary to return to options, then uncomment it)
+	ForeignExchange.SelectOption();  
 	}
 	else {
 		System.out.println("Please enter valid input!");
