@@ -10,17 +10,17 @@ static void exit() {
 	if(conformation.equalsIgnoreCase("y")){
 	System.out.println("Bye - have a good day!");
 	System.out.println("**********************");
-	ForeignExchange.SelectOption();
+	//ForeignExchange.SelectOption(); // (if it is necessary to return to options, then uncomment it)
 	}
 	else if(conformation.equalsIgnoreCase("n")){
 	System.out.println("**********************");
-	ForeignExchange.SelectOption();
+	//ForeignExchange.SelectOption();  // (if it is necessary to return to options, then uncomment it)
 	}
 	else {
 		System.out.println("Please enter valid input!");
 		exit();
 		System.out.println("**********************");
-		ForeignExchange.SelectOption();
+		
 	}
 	
 }
