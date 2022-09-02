@@ -18,11 +18,15 @@ public static void bookTrade() {
 	 //checks the given input String to the below mentioned String value
 	 if(CurrencyPair.equalsIgnoreCase("USDINR")) {   // if we give input as lower,upper or LowerUpper cases...still it will work 
 		 System.out.println("Enter the amount");
+		 System.out.println();
+		 // if we enter characters as input in amount, then exception(InputMismatchException) will occur. To overcome from this try catch is used
 		 try{
-			 amount =input.nextDouble();
+			 amount=input.nextDouble();
 		 }
 		 catch(InputMismatchException e) {
 			 System.out.println("Please enter the valid input!");
+		
+			 
 			 bookTrade();
 		 }
 		 //amount =input.nextDouble();
